@@ -24,6 +24,15 @@ switch ($table) {
     case 'news':
         $_POST['sh'] = 1;
         break;
+    case 'menu':
+        $_POST['sh'] = 1;
+        break;
+}
+if (isset($_POST['pw2'])) {
+    unset($_POST['pw2']);
+}
+if (isset($_POST['href'])) {
+    $_POST['menu_id']=0;
 }
 $DB->save($_POST);
 to("../back.php?do=$table");

@@ -17,9 +17,9 @@ $admins = $Admin->all();
                     <tr>
                         <td width="36%"><input style="width: 80%;" type="text" name="acc[]" id="" value="<?= $admin['acc']; ?>"></td>
                         <td width="36%"><input style="width: 80%;" type="text" name="pw[]" id="" value="<?= str_repeat("*",mb_strlen($admin['pw'])); ?>"></td>
-                        <td width="7%"><input type="checkbox" name="del[]" value="<?= $ad['id']; ?>"></td>
+                        <td width="7%"><input type="checkbox" name="del[]" value="<?= $admin['id']; ?>"></td>
                         <input type="hidden" name="table" value="<?=$do;?>">
-                        <input type="hidden" name="id[]" value="<?= $ad['id']; ?>">
+                        <input type="hidden" name="id[]" value="<?= $admin['id']; ?>">
                     </tr>
                 <?php
                 }

@@ -111,6 +111,7 @@ $Ad=new DB('ad');
 $Mvim=new DB('mvim');
 $Image=new DB('image');
 $News=new DB('new');
+$Menu=new DB('menu');
 
 if (!isset($_SESSION['visited'])) {
     $total=$Total->find(["id"=>2]);
